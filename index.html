@@ -3,14 +3,14 @@
 <head>
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
   <title>Organization Index on Freehub</title>
-  <link href="../stylesheets/reset-min.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="../stylesheets/calendar_date_select/silver.css" media="screen" rel="stylesheet"
+  <link href="./stylesheets/reset-min.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="./stylesheets/calendar_date_select/silver.css" media="screen" rel="stylesheet"
     type="text/css" />
-  <link href="../stylesheets/v2/application.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="../stylesheets/form.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="./stylesheets/v2/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="./stylesheets/form.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div class='application'>
+  <div id='application'>
     <!--div id='header'>
       <div id='user_status'>
         <span class='log_in'>
@@ -28,7 +28,7 @@
       <h2>Welcome to <a href="/">Freehub</a></h2>
     </div-->
     <!--div class='application_body'-->
-      <div class='column-left'>
+      <div id='column-left'>
         <div class='section'>
           <h2>About Freehub</h2>
           <p>
@@ -62,11 +62,11 @@
         <div class='section'>
           <h2>Quick Demo</h2>
           <p>This <a href="/demo/summary.html">short movie</a> demonstrates the basic features of Freehub.</p>
-          <p><a href="/demo/summary.html"><img alt="Demo" src="/demo/demo.jpg?1305303086"
+          <p><a href="/demo/summary.html"><img alt="Demo" src="../demo/demo.jpg?1305303086"
                 style="border: 1px solid lightgrey;" /></a></p>
         </div>
       </div>
-      <div class='column'>
+      <div id='column'>
         <div class='section'>
           <h2>Log In</h2>
           <form action="/session" id="home_login" method="post">

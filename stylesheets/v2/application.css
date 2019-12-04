@@ -17,7 +17,7 @@ body, legend, select, input, textarea, th, td {
   padding: 14px;
 }
 
-.application {
+#application {
   display: grid;
   grid-template-columns: 478px 478px;
   grid-template-rows: auto;
@@ -25,7 +25,7 @@ body, legend, select, input, textarea, th, td {
     "column-left column";
 }
 
-.header {
+#header {
   grid-area: header;
   background: #eee;
 }
@@ -38,12 +38,12 @@ body, legend, select, input, textarea, th, td {
   color: white;
 }
 
-.column-left {
+#column-left {
   grid-area: column-left;
   padding: 26px;
 }
 
-.column {
+#column {
   grid-area: column;
   padding: 26px;
 }
@@ -133,7 +133,7 @@ td.time {
 }
 
 @media (max-width: 800px) {
-  .application {
+  #application {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     grid-template-areas:
