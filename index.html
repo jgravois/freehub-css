@@ -1,0 +1,259 @@
+<html>
+<head>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+  <title>Organization Index on Freehub</title>
+  <link href="/stylesheets/reset-min.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/calendar_date_select/silver.css" media="screen" rel="stylesheet"
+    type="text/css" />
+  <link href="/stylesheets/v2/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/form.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class='application'>
+    <!--div id='header'>
+      <div id='user_status'>
+        <span class='log_in'>
+          <a href="/session/new">Log In</a>
+        </span>
+      </div>
+      <span id='notice'>You have been logged out.</span>
+    </div>
+    <div id='application_nav'>
+      <ul class='tabs'>
+        <li class='selected'><a href='/'>Home</a></li>
+      </ul>
+    </div>
+    <div id='application_header'>
+      <h2>Welcome to <a href="/">Freehub</a></h2>
+    </div-->
+    <!--div class='application_body'-->
+      <div class='column-left'>
+        <div class='section'>
+          <h2>About Freehub</h2>
+          <p>
+            Freehub is a system developed by the
+            <a href="http://www.bikekitchen.org">San Francisco Bike Kitchen</a>
+            and shared with other community bike shops to manage members and track patron visits.
+          </p>
+          <p>In order to keep Freehub easy to use and understand we strive to keep it simple and focused.</p>
+          <p>Freehub is:</p>
+          <ul class='content'>
+            <li>A database of members and the services they have access to</li>
+            <li>A sign in system for use at the front desk of the shop</li>
+            <li>A reporting tool for looking at shop use, membership status,...</li>
+          </ul>
+          <p>Freehub is <b>not</b>:</p>
+          <ul class='content'>
+            <li>A broadcast emailer - Freehub will not send emails to your members or patrons</li>
+            <li>An accounting tool - we do not track money in Freehub</li>
+            <li>An inventory tool - we do not track tools or parts in Freehub</li>
+            <li>An point of sale system - we do not track shop sales in Freehub</li>
+          </ul>
+          <p>For more information please see the <a href="https://github.com/asalant/freehub/wiki">project wiki</a>.</p>
+        </div>
+        <div class='section'>
+          <h2>Sign Up</h2>
+          <p><a href="/organizations/new">Sign up now</a> to try this free service.</p>
+          <p>You are welcome to try Freehub for your organization. You can export your data at any time if you want to
+            stop using Freehub.</p>
+          <p>Keep in mind that we are in a beta phase and can not guarantee availability or stability.</p>
+        </div>
+        <div class='section'>
+          <h2>Quick Demo</h2>
+          <p>This <a href="/demo/summary.html">short movie</a> demonstrates the basic features of Freehub.</p>
+          <p><a href="/demo/summary.html"><img alt="Demo" src="/demo/demo.jpg?1305303086"
+                style="border: 1px solid lightgrey;" /></a></p>
+        </div>
+      </div>
+      <div class='column'>
+        <div class='section'>
+          <h2>Log In</h2>
+          <form action="/session" id="home_login" method="post">
+            <div>
+              <input name="authenticity_token" type="hidden"
+                value="xjDCFbR+265wnt9a6R9BZJU0rjaurBreT1IAueHVsNU=" />
+            </div>
+            <ul>
+              <li>
+                <label class='desc' for='login'>
+                  Login
+                </label>
+                <input id="login" name="login" type="text" />
+              </li>
+              <li>
+                <label class='desc' for='password'>
+                  Password
+                </label>
+                <input id="password" name="password" type="password" />
+              </li>
+              <li>
+                <input id="remember_me" name="remember_me" type="checkbox" value="1" />
+                <label class='choice' for='remember_me'>Remember me</label>
+              </li>
+              <li>
+                <input name="commit" type="submit" value="Log In" />
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class='section'>
+          <h2>Organizations</h2>
+          <p>These organization have signed up to use Freehub and are actively using it.</p>
+          <table width='100%'>
+            <tr>
+              <th></th>
+            </tr>
+            <tr class='odd'>
+              <td>
+                <b> Bikery / Capital of Cycling / MCF</b>
+                <br />
+                Bradford, West Yorkshire
+              </td>
+              <td style='width: 200px'>
+                last visit Fri Nov 29 2019 7:15 am
+                <br />
+              </td>
+            </tr>
+            <tr class='even'>
+              <td>
+                <b>Community Bike Kitchen, Eureka CA</b>
+                <br />
+                Eureka, CA
+              </td>
+              <td style='width: 200px'>
+                last visit Tue Dec 03 2019 6:52 pm
+                <br />
+                16 members
+              </td>
+            </tr>
+            <tr class='odd'>
+              <td>
+                <b>Hubitat @ Omnitrans Transit Center</b>
+                <br />
+                San Bernardino, CA
+              </td>
+              <td style='width: 200px'>
+                last visit Mon Dec 02 2019 3:01 pm
+                <br />
+              </td>
+            </tr>
+            <tr class='even'>
+              <td>
+                <b>London Bike Kitchen</b>
+                <br />
+                London, UK
+              </td>
+              <td style='width: 200px'>
+                last visit Tue Dec 03 2019 7:06 am
+                <br />
+              </td>
+            </tr>
+            <tr class='odd'>
+              <td>
+                <b>QC Bike Collective</b>
+                <br />
+                Manchester, NH
+              </td>
+              <td style='width: 200px'>
+                last visit Sat Nov 30 2019 12:47 pm
+                <br />
+              </td>
+            </tr>
+            <tr class='even'>
+              <td>
+                <b>Redlands BikeBBQ</b>
+                <br />
+                redlands, ca
+              </td>
+              <td style='width: 200px'>
+                last visit Tue Dec 03 2019 6:49 pm
+                <br />
+              </td>
+            </tr>
+            <tr class='odd'>
+              <td>
+                <b>Revolutions Bicycle Cooperative</b>
+                <br />
+                Memphis, TN
+              </td>
+              <td style='width: 200px'>
+                last visit Sun Nov 24 2019 1:23 pm
+                <br />
+                80 members
+              </td>
+            </tr>
+            <tr class='even'>
+              <td>
+                <b>Sacramento Bicycle Kitchen</b>
+                <br />
+                Sacramento, CA
+              </td>
+              <td style='width: 200px'>
+                last visit Tue Dec 03 2019 6:41 pm
+                <br />
+                14 members
+              </td>
+            </tr>
+            <tr class='odd'>
+              <td>
+                <b>San Francisco Bike Kitchen</b>
+                <br />
+                San Francisco, CA
+              </td>
+              <td style='width: 200px'>
+                last visit Tue Dec 03 2019 6:44 pm
+                <br />
+                360 members
+              </td>
+            </tr>
+            <tr class='even'>
+              <td>
+                <b>Spokeland</b>
+                <br />
+                Oakland, CA
+              </td>
+              <td style='width: 200px'>
+                last visit Sun Nov 24 2019 4:43 pm
+                <br />
+              </td>
+            </tr>
+            <tr class='odd'>
+              <td>
+                <b>St. Pete Bike Co-op</b>
+                <br />
+                St. Petersburg, FL
+              </td>
+              <td style='width: 200px'>
+                last visit Mon Dec 02 2019 3:53 pm
+                <br />
+                53 members
+              </td>
+            </tr>
+          </table>
+        </div-->
+      </div>
+      <!--div></div-->
+    </div>
+    <!--div class='application_footer'>
+      Times shown are Pacific Time (US & Canada) timezone.
+    </div-->
+  </div>
+  <!--div class='footer'>
+    <div class='body'>
+      <div id='logo'>
+        <a href="/">Freehub</a>
+      </div>
+      <ul>
+        <li>Get <a href="http://wiki.github.com/asalant/freehub/freehub-support">help or send feedback</a></li>
+        <li>Check the <a href="http://wiki.github.com/asalant/freehub/">project documentation</a></li>
+      </ul>
+      <ul>
+        <li>Thanks to <a href="http://www.engineyard.com">EngineYard</a> for hosting</li>
+      </ul>
+      <div class='credit'>
+        <img alt="Ey-logo" src="/images/ey-logo.gif?1305303086" />
+      </div>
+    </div>
+  </div-->
+</body>
+</html>
