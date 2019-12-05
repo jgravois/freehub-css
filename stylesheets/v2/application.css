@@ -6,8 +6,7 @@ body {
 body, legend, select, input, textarea, th, td {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   /** font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif; **/
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
   color: #555;
 }
 
@@ -19,10 +18,11 @@ body, legend, select, input, textarea, th, td {
 
 #application {
   display: grid;
-  grid-template-columns: 478px 478px;
+  grid-template-columns: 40% 60%;
   grid-template-rows: auto;
   grid-template-areas:
-    "column-left column";
+    "column-left column"
+    "footer footer";
 }
 
 #header {
@@ -55,10 +55,18 @@ body, legend, select, input, textarea, th, td {
   padding: 14px 14px 26px 14px;
 }
 
-.footer {
+#footer {
   grid-area: footer;
   background: black;
   color: white;
+}
+
+#footer .body {
+  font-size: 11px;
+}
+
+#footer a {
+  color: pink;
 }
 
 .l-gutter {
@@ -85,23 +93,22 @@ div.section {
   padding: 10px 0 10px 10px;
 }
 
-.column-left p, .column p {
+a {
+  text-decoration: none;
+}
+
+p {
   padding: 3px 0 3px 0;
 }
 
-.column-left h1, .column h1 {
-  font-size: 24px;
+h1 {
+  font-size: 30px;
   padding: 0 0 12px 0;
 }
 
-.column-left h2, .column h2 {
-  font-size: 18px;
+h2 {
+  font-size: 24px;
   padding: 0 10px 10px 0;
-}
-
-.application_body h3 {
-  font-size: 14px;
-  margin: 14px 0 8px 0;
 }
 
 table {
@@ -140,4 +147,18 @@ td.time {
       'column'
       'column-left';
   }
+}
+
+input[type=submit] {
+  width: 20em;
+  height: 2em;
+  border: none;
+  background-color: #e7e7e7;
+}
+
+#footer .body {
+  padding: 40px 20px 10px 20px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
