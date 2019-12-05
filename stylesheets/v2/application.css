@@ -162,3 +162,11 @@ input[type=submit] {
   flex-flow: row;
   justify-content: space-between;
 }
+
+ul.content {
+  padding: 3px 3px 3px 20px;
+}
+
+ul.content li {
+  list-style-type: disc;
+}
