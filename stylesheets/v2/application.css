@@ -139,6 +139,13 @@ td.time {
   text-align: right;
 }
 
+#footer .body {
+  padding: 40px 20px 10px 20px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
 @media (max-width: 800px) {
   #application {
     grid-template-columns: auto;
@@ -147,6 +154,10 @@ td.time {
       'column'
       'column-left';
   }
+
+  #footer .body {
+    flex-flow: column;
+  }
 }
 
 input[type=submit] {
@@ -154,13 +165,6 @@ input[type=submit] {
   height: 2em;
   border: none;
   background-color: #e7e7e7;
-}
-
-#footer .body {
-  padding: 40px 20px 10px 20px;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
 }
 
 ul.content {
