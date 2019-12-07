@@ -1,0 +1,219 @@
+<html>
+
+<head>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+  <title>Redlands BikeBBQ on Freehub</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/effects.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/dragdrop.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/controls.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/AC_Quicktime.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/application.js?1462168765" type="text/javascript"></script>
+  <script src="/javascripts/tags.jquery.js?1462168765" type="text/javascript"></script>
+  <link href="/stylesheets/reset-min.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/calendar_date_select/calendar_date_select.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/calendar_date_select/format_hyphen_ampm.js?1305303086" type="text/javascript"></script>
+  <link href="/stylesheets/calendar_date_select/silver.css?1305303086" media="screen" rel="stylesheet"
+    type="text/css" />
+
+  <link href="/stylesheets/application.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/form.css?1464065741" media="screen" rel="stylesheet" type="text/css" />
+  <meta name="csrf-param" content="authenticity_token" />
+  <meta name="csrf-token" content="7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g=" />
+
+</head>
+
+<body>
+  <div id='application'>
+    <div id='header'>
+      <div id='user_status'>
+        <span class='greeting'>
+          Hello
+          <b><a href="/users/850077844/edit">bikebbq</a></b>
+        </span>
+        <span class='log_out'>
+          <a href="/session"
+            onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g='); f.appendChild(s);f.submit();return false;">Log
+            Out</a>
+        </span>
+      </div>
+    </div>
+    <div id='application_nav'>
+      <ul class='tabs'>
+        <li class=''><a href='/bikebbq'>Home</a></li>
+        <li class=''><a href='/bikebbq/visits/2019/12/7'>Visits</a></li>
+        <li class=''><a href='/bikebbq/reports'>Reports</a></li>
+        <li class=''><a href='/bikebbq/edit'>Settings</a></li>
+      </ul>
+    </div>
+    <div id='application_header'>
+      <h2><a href="/bikebbq">Redlands BikeBBQ</a></h2>
+    </div>
+    <div class='content' id='application_body'>
+      <h1>People : New</h1>
+      <p>
+        Only First Name is required. For those who which to not be identified, please sign in as
+        <a href="/bikebbq/reports/people?report%5Bmatching_name%5D=Anonymous">Anonymous</a>.
+      </p>
+
+      <form action="/bikebbq/people" class="new_person" id="new_person" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden"
+            value="7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g=" /></div>
+        <div class='section'>
+          <div class='column left'>
+            <ul>
+              <li>
+                <label class='desc' for='person_first_name'>
+                  Name
+                  <span class='req'>*</span>
+                </label>
+                <span>
+                  <input class="text short" id="person_first_name" name="person[first_name]" size="30" type="text" />
+                  <label for='person_first_name'>First</label>
+                </span>
+                <span>
+                  <input class="text short" id="person_last_name" name="person[last_name]" size="30" type="text" />
+                  <label for='person_last_name'>Last</label>
+                </span>
+              </li>
+              <li>
+                <label class='desc' for='person_email'>
+                  Email
+                </label>
+                <span>
+                  <input class="text short" id="person_email" name="person[email]" size="30" type="text" />
+                </span>
+                <span>
+                  <input name="person[email_opt_out]" type="hidden" value="0" /><input class="checkbox"
+                    id="person_email_opt_out" name="person[email_opt_out]" type="checkbox" value="1" />
+                  <label class='choice' for='person_email_opt_out'>Don't send emails</label>
+                </span>
+              </li>
+              <li>
+                <label class='desc'>
+                  Address
+                </label>
+                <div>
+                  <input class="text medium" id="person_street1" name="person[street1]" size="30" type="text" />
+                  <label>Street Address</label>
+                </div>
+                <div>
+                  <input class="text medium" id="person_street2" name="person[street2]" size="30" type="text" />
+                  <label>Address Line 2</label>
+                </div>
+                <span>
+                  <input class="text short" id="person_city" name="person[city]" size="30" type="text" />
+                  <label for='person_city'>City</label>
+                </span>
+                <span>
+                  <input class="text short" id="person_state" name="person[state]" size="30" type="text" />
+                  <label for='person_state'>State / Province / Region</label>
+                </span>
+                <span>
+                  <input class="text short" id="person_postal_code" name="person[postal_code]" size="30" type="text" />
+                  <label for='person_postal_code'>Postal / Zip Code</label>
+                </span>
+                <span>
+                  <input class="text short" id="person_country" name="person[country]" size="30" type="text"
+                    value="US" />
+                  <label for='person_country'>Country</label>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class='column'>
+            <ul>
+              <li>
+                <label class='desc' for='person_phone'>
+                  Phone Number
+                </label>
+                <input class="text short" id="person_phone" name="person[phone]" size="30" type="text" />
+              </li>
+              <li>
+                <label class='desc' for='yob'>
+                  Year of Birth
+                </label>
+                <input class="text short" id="person_yob" name="person[yob]" size="30" type="text" />
+              </li>
+              <li>
+                <label class='desc'>
+                  Role
+                </label>
+                <input checked="checked" class="radio" id="person_staff_false" name="person[staff]" type="radio"
+                  value="false" />
+                <label class='choice' for='person_staff_false'>Patron</label>
+                <input class="radio" id="person_staff_true" name="person[staff]" type="radio" value="true" />
+                <label class='choice' for='person_staff_true'>Staff</label>
+              </li>
+              <li>
+                <label class='desc'>
+                  Services
+                </label>
+                <input class="checkbox" id="membership" name="membership" type="checkbox" value="true" />
+                <label class='choice' for='membership'>Paid Membership starting today</label>
+                <input class="checkbox" id="eab" name="eab" type="checkbox" value="true" />
+                <label class='choice' for='eab'>Paid Digging Rights/EAB starting today</label>
+                <input class="checkbox" id="visiting" name="visiting" type="checkbox" value="true" />
+                <label class='choice' for='visiting'>Visiting the shop today</label>
+              </li>
+              <li>
+                <label class='desc' for='tag_list'>
+                  Tags
+                </label>
+                <div>
+                  <input class="text medium" id="person_tag_list" name="person[tag_list]" size="30" type="text"
+                    value="" />
+                  <label>Separated by commas</label>
+                </div>
+              </li>
+              <li><input id="person_submit" name="commit" type="submit" value="Create" /></li>
+            </ul>
+          </div>
+        </div>
+
+      </form>
+      <script type='text/javascript'>
+        //<![CDATA[
+        $('person_first_name').focus();
+  //]]>
+      </script>
+
+      <div style='clear:both;'></div>
+    </div>
+    <div id='application_footer'>
+      Times shown are Pacific Time (US & Canada) timezone.
+    </div>
+  </div>
+  <div id='footer'>
+    <div class='body'>
+      <div id='logo'>
+        <a href="/">Freehub</a>
+      </div>
+      <ul>
+        <li>Get <a href="http://wiki.github.com/asalant/freehub/freehub-support">help or send feedback</a></li>
+        <li>Check the <a href="http://wiki.github.com/asalant/freehub/">project documentation</a></li>
+      </ul>
+      <ul>
+        <li>Thanks to <a href="http://www.engineyard.com">EngineYard</a> for hosting</li>
+      </ul>
+      <div class='credit'>
+        <img alt="Ey-logo" src="/images/ey-logo.gif?1305303086" />
+      </div>
+    </div>
+  </div>
+  <script type='text/javascript'>
+    //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16200053-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+  </script>
+</body>
+
+</html>

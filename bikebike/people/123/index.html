@@ -1,0 +1,272 @@
+<html>
+
+<head>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+  <title>Adrian Solis on Freehub</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/effects.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/dragdrop.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/controls.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/AC_Quicktime.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/application.js?1462168765" type="text/javascript"></script>
+  <script src="/javascripts/tags.jquery.js?1462168765" type="text/javascript"></script>
+  <link href="/stylesheets/reset-min.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/calendar_date_select/calendar_date_select.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/calendar_date_select/format_hyphen_ampm.js?1305303086" type="text/javascript"></script>
+  <link href="/stylesheets/calendar_date_select/silver.css?1305303086" media="screen" rel="stylesheet"
+    type="text/css" />
+
+  <link href="/stylesheets/application.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/form.css?1464065741" media="screen" rel="stylesheet" type="text/css" />
+  <meta name="csrf-param" content="authenticity_token" />
+  <meta name="csrf-token" content="7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g=" />
+  <link href="/stylesheets/people.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/tags.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/tags.jquery.js?1462168765" type="text/javascript"></script>
+  <script type='text/javascript'>
+    //<![CDATA[
+    (function ($) {
+      $(function () {
+        $('.tags_control').tags_control();
+        $('#visit_submit').focus();
+      });
+    })(jQuery);
+  //]]>
+  </script>
+
+</head>
+
+<body>
+  <div id='application'>
+    <div id='header'>
+      <div id='user_status'>
+        <span class='greeting'>
+          Hello
+          <b><a href="/users/850077844/edit">bikebbq</a></b>
+        </span>
+        <span class='log_out'>
+          <a href="/session"
+            onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g='); f.appendChild(s);f.submit();return false;">Log
+            Out</a>
+        </span>
+      </div>
+    </div>
+    <div id='application_nav'>
+      <ul class='tabs'>
+        <li class=''><a href='/bikebbq'>Home</a></li>
+        <li class=''><a href='/bikebbq/visits/2019/12/7'>Visits</a></li>
+        <li class=''><a href='/bikebbq/reports'>Reports</a></li>
+        <li class=''><a href='/bikebbq/edit'>Settings</a></li>
+      </ul>
+    </div>
+    <div id='application_header'>
+      <h2><a href="/bikebbq">Redlands BikeBBQ</a></h2>
+    </div>
+    <div class='content' id='application_body'>
+      <h1>Adrian Solis</h1>
+      <ul id='summary'>
+        <li class='person_type'>
+          Patron
+        </li>
+        <li>Not a member</li>
+        <li><a href="/bikebbq/people/1034937408/services/new">Create Membership</a></li>
+        <li></li>
+        <li></li>
+        <li><a href="/bikebbq/people/1034937408/edit">Edit Adrian</a></li>
+        <li>&nbsp;</li>
+        <li>
+          <div class='tags_control'>
+            <div class='view'>
+              <ul class='tags'>
+                <li><img alt="Tag_yellow" src="/images/tag_yellow.png?1305303086" /></li>
+                <li>
+                  <a class='show_edit' href='#'>Edit tags</a>
+                </li>
+              </ul>
+            </div>
+            <div class='edit'>
+              <ul class='tags'>
+                <li><img alt="Spinner" class="spinner" src="/images/spinner.gif?1305303086" /></li>
+                <li class='form'>
+                  <form action="/bikebbq/people/1034937408/taggings" method="post">
+                    <div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden"
+                        value="7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g=" /></div>
+                    <select>
+                      <option value=''>Choose tag</option>
+                      <option value='anonymous'>anonymous</option>
+                      <option value='awesome'>awesome</option>
+                      <option value='bike hospital volunteer'>bike hospital volunteer</option>
+                      <option value='California Naturalist'>California Naturalist</option>
+                      <option value='coach yucaipa bike'>coach yucaipa bike</option>
+                      <option value='cruiser'>cruiser</option>
+                      <option value='dr. vic'>dr. vic</option>
+                      <option value='ESRI intern'>ESRI intern</option>
+                      <option value='father'>father</option>
+                      <option value='freespirit bike'>freespirit bike</option>
+                      <option value='hubitat'>hubitat</option>
+                      <option value='huffy'>huffy</option>
+                      <option value='IEBA'>IEBA</option>
+                      <option value='jurupa valley'>jurupa valley</option>
+                      <option value='koo'>koo</option>
+                      <option value="Looking for a women's road bike">Looking for a women's road bike</option>
+                      <option value='manager'>manager</option>
+                      <option value='mechanic class'>mechanic class</option>
+                      <option value='motorized bike maker'>motorized bike maker</option>
+                      <option value='newborn'>newborn</option>
+                      <option value='PD'>PD</option>
+                      <option value='Redlands Conservancy'>Redlands Conservancy</option>
+                      <option value='RWBC'>RWBC</option>
+                      <option value='shop staff'>shop staff</option>
+                      <option value='since 2014 volunteer'>since 2014 volunteer</option>
+                      <option value='Student'>Student</option>
+                      <option value='Teacher'>Teacher</option>
+                      <option value='The Artist'>The Artist</option>
+                      <option value='Trek 1000'>Trek 1000</option>
+                      <option value='Volunteer'>Volunteer</option>
+                      <option value='volunteer interest'>volunteer interest</option>
+                      <option value='welds'>welds</option>
+                      <option value='Youth'>Youth</option>
+                      <option value=''>------</option>
+                      <option value=''>New tag</option>
+                    </select>
+                  </form>
+                </li>
+                <li>
+                  <a class='show_view' href='#'>Done</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div id='sign_in'>
+        <h2>Sign Adrian In</h2>
+        <form action="/bikebbq/people/1034937408/visits" class="new_visit" id="new_visit" method="post">
+          <div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden"
+              value="7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g=" /></div>
+          <input id="destination" name="destination" type="hidden" value="/bikebbq/visits/2019/12/7" />
+          <ul>
+            <li>
+              <input checked="checked" id="visit_volunteer_false" name="visit[volunteer]" type="radio" value="false" />
+              <label class='inline' for='visit_volunteer_false'>Visiting</label>
+              <input id="visit_volunteer_true" name="visit[volunteer]" type="radio" value="true" />
+              <label class='inline' for='visit_volunteer_true'>Volunteering</label>
+            </li>
+            <li>
+              <textarea cols="40" id="note_text" name="note[text]" rows="20" style="display:none;"></textarea>
+              <a href="#" id="add_note_link"
+                onclick="Element.show('note_text');Element.hide('add_note_link'); return false;">Add Note</a>
+            </li>
+            <li>
+              <input id="visit_submit" name="commit" type="submit" value="Sign In" />
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div class='section'>
+        <div class='column left' id='visits'>
+          <h2>Recent Visits</h2>
+          <a href="/bikebbq/people/1034937408/visits/new" class="add_link">Add a Visit</a>
+          <ul>
+            <li class='odd'>
+              <span class='what'>Visited</span>
+              <span class='when' title='Sat Dec 07 2019 1:21 pm'>about 2 hours ago</span>
+              <span class='note'>owes us $5 for two tubes. (i didn&#39;t have enough money to make change)
+                <br></span>
+            </li>
+            <li class='even'>
+              <span class='what'>Visited</span>
+              <span class='when' title='Tue Dec 03 2019 7:02 pm'>4 days ago</span>
+              <span class='note'>work on shop bikes.</span>
+            </li>
+            <li class='odd'>
+              <span class='what'>Visited</span>
+              <span class='when' title='Sat Nov 16 2019 12:41 pm'>21 days ago</span>
+              <span class='note'>paid $45 for a set of FSA wheels with some grind in the rear hub and a couple nuts and
+                bolts.</span>
+            </li>
+            <li class='even'>
+              <span class='what'>Visited</span>
+              <span class='when' title='Thu Oct 24 2019 6:35 pm'>about 1 month ago</span>
+            </li>
+            <li class='odd'>
+              <span class='what'>Visited</span>
+              <span class='when' title='Thu Oct 17 2019 7:06 pm'>about 1 month ago</span>
+            </li>
+          </ul>
+          <p>
+            <a href="/bikebbq/people/1034937408/visits">See All 34 Visits with Details</a>
+          </p>
+        </div>
+        <div class='column' id='services'>
+          <h2>Current Services</h2>
+          <a href="/bikebbq/people/1034937408/services/new" class="add_link">Add A Service</a>
+          <p class='list_status'>No past services.</p>
+        </div>
+      </div>
+      <div class='section' id='notes'>
+        <h2>Recent Notes</h2>
+        <a href="/bikebbq/people/1034937408/notes/new" class="add_link">Add A Note</a>
+        <ul>
+          <li class='odd'>
+            <span class='what'><a href="/users/850077844">bikebbq</a>
+              about 1 hour ago said:</span>
+            <span class='note'>owes us $5 for two tubes. (i didn&#39;t have enough money to make change)
+              <br></span>
+          </li>
+          <li class='even'>
+            <span class='what'><a href="/users/850077844">bikebbq</a>
+              4 days ago said:</span>
+            <span class='note'>work on shop bikes.</span>
+          </li>
+          <li class='odd'>
+            <span class='what'><a href="/users/850077844">bikebbq</a>
+              21 days ago said:</span>
+            <span class='note'>paid $45 for a set of FSA wheels with some grind in the rear hub and a couple nuts and
+              bolts.</span>
+          </li>
+        </ul>
+        <p>
+          <a href="/bikebbq/people/1034937408/notes">See All 8 Notes.</a>
+        </p>
+      </div>
+
+      <div style='clear:both;'></div>
+    </div>
+    <div id='application_footer'>
+      Times shown are Pacific Time (US & Canada) timezone.
+    </div>
+  </div>
+  <div id='footer'>
+    <div class='body'>
+      <div id='logo'>
+        <a href="/">Freehub</a>
+      </div>
+      <ul>
+        <li>Get <a href="http://wiki.github.com/asalant/freehub/freehub-support">help or send feedback</a></li>
+        <li>Check the <a href="http://wiki.github.com/asalant/freehub/">project documentation</a></li>
+      </ul>
+      <ul>
+        <li>Thanks to <a href="http://www.engineyard.com">EngineYard</a> for hosting</li>
+      </ul>
+      <div class='credit'>
+        <img alt="Ey-logo" src="/images/ey-logo.gif?1305303086" />
+      </div>
+    </div>
+  </div>
+  <script type='text/javascript'>
+    //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16200053-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+  </script>
+</body>
+
+</html>
