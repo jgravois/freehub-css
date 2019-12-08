@@ -1,0 +1,152 @@
+<html>
+
+<head>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+  <title>Adrian Solis on Freehub</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/effects.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/dragdrop.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/controls.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/AC_Quicktime.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/application.js?1462168765" type="text/javascript"></script>
+  <script src="/javascripts/tags.jquery.js?1462168765" type="text/javascript"></script>
+  <link href="/stylesheets/reset-min.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/calendar_date_select/calendar_date_select.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/calendar_date_select/format_hyphen_ampm.js?1305303086" type="text/javascript"></script>
+  <link href="/stylesheets/calendar_date_select/silver.css?1305303086" media="screen" rel="stylesheet"
+    type="text/css" />
+
+  <link href="../../../../../stylesheets/v2/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/form.css?1464065741" media="screen" rel="stylesheet" type="text/css" />
+  <meta name="csrf-param" content="authenticity_token" />
+  <meta name="csrf-token" content="HuyJfw+Ojf0SsLMgYMJ9EhB7P84BtFCGfkwITxXhBH0=" />
+
+</head>
+
+<body>
+  <div id='application'>
+    <div id='header'>
+      <div id='user_status'>
+        <span class='greeting'>
+          Hello
+          <b><a href="/users/850077844/edit">bikebbq</a></b>
+        </span>
+        <span class='log_out'>
+          <a href="/session"
+            onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'HuyJfw+Ojf0SsLMgYMJ9EhB7P84BtFCGfkwITxXhBH0='); f.appendChild(s);f.submit();return false;">Log
+            Out</a>
+        </span>
+      </div>
+    </div>
+    <div id='application_nav'>
+      <ul class='tabs'>
+        <li class=''><a href='/bikebbq'>Home</a></li>
+        <li class=''><a href='/bikebbq/visits/2019/12/7'>Visits</a></li>
+        <li class=''><a href='/bikebbq/reports'>Reports</a></li>
+        <li class=''><a href='/bikebbq/edit'>Settings</a></li>
+      </ul>
+    </div>
+    <div id='application_header'>
+      <h2><a href="/bikebbq">Redlands BikeBBQ</a></h2>
+    </div>
+    <div class='content' id='application_body'>
+      <div class='column'>
+        <h1>
+          <a href="/bikebbq/people/1034937408">Adrian Solis</a>
+          :
+          <a href="/bikebbq/people/1034937408/services">Services</a>
+          : New
+        </h1>
+        <form action="/bikebbq/people/1034937408/services" class="new_service" id="new_service" method="post">
+          <div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden"
+              value="HuyJfw+Ojf0SsLMgYMJ9EhB7P84BtFCGfkwITxXhBH0=" /></div>
+
+          <ul>
+            <li>
+              <label class='desc' for='service_type_id'>
+                Service type
+              </label>
+              <select id="service_service_type_id" name="service[service_type_id]">
+                <option value="MEMBERSHIP">Membership</option>
+                <option value="EAB">Earn a Bike/Digging Rights</option>
+                <option value="CLASS">Class</option>
+              </select>
+            </li>
+            <li>
+              <label class='desc' for='start_date'>
+                Start date
+              </label>
+              <input id="service[start_date]" name="service[start_date]" type="text" value="2019-12-08" /> <img
+                alt="Calendar" class="calendar_date_select_popup_icon"
+                onclick="new CalendarDateSelect( $(this).previous(), {year_range:[2014, 2020]} );"
+                src="/images/calendar_date_select/calendar.gif?1305303086" style="border:0px; cursor:pointer;" />
+            </li>
+            <li>
+              <label class='desc' for='end_date'>
+                End date
+              </label>
+              <input id="service[end_date]" name="service[end_date]" type="text" value="2020-12-08" /> <img alt="Calendar"
+                class="calendar_date_select_popup_icon"
+                onclick="new CalendarDateSelect( $(this).previous(), {year_range:[2015, 2021]} );"
+                src="/images/calendar_date_select/calendar.gif?1305303086" style="border:0px; cursor:pointer;" />
+            </li>
+            <li>
+              <input name="service[paid]" type="hidden" value="0" /><input class="checkbox" id="service_paid"
+                name="service[paid]" type="checkbox" value="1" />
+              <label class='choice' for='service_paid'>Paid</label>
+              <input name="service[volunteered]" type="hidden" value="0" /><input class="checkbox"
+                id="service_volunteered" name="service[volunteered]" type="checkbox" value="1" />
+              <label class='choice' for='service_volunteered'>Volunteered</label>
+            </li>
+            <li>
+              <label class='desc' for='visit_note'>
+                Note
+              </label>
+              <textarea cols="40" id="note_text" name="note[text]" rows="6"></textarea>
+            </li>
+            <li>
+              <input id="service_submit" name="commit" type="submit" value="Create" />
+            </li>
+          </ul>
+
+        </form>
+      </div>
+      <div style='clear:both;'></div>
+    </div>
+    <div id='application_footer'>
+      Times shown are Pacific Time (US & Canada) timezone.
+    </div>
+  </div>
+  <div id='footer'>
+    <div class='body'>
+      <div id='logo'>
+        <a href="/">Freehub</a>
+      </div>
+      <ul>
+        <li>Get <a href="http://wiki.github.com/asalant/freehub/freehub-support">help or send feedback</a></li>
+        <li>Check the <a href="http://wiki.github.com/asalant/freehub/">project documentation</a></li>
+      </ul>
+      <ul>
+        <li>Thanks to <a href="http://www.engineyard.com">EngineYard</a> for hosting</li>
+      </ul>
+      <div class='credit'>
+        <img alt="Ey-logo" src="/images/ey-logo.gif?1305303086" />
+      </div>
+    </div>
+  </div>
+  <script type='text/javascript'>
+    //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16200053-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+  </script>
+</body>
+
+</html>
