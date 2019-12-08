@@ -14,6 +14,7 @@ responsive styles for freehub (for 2019)
 - [ ] [/bikebike/edit](https://johngravois.com/freehub-css/bikebike/edit/index.html) coop settings
 - [ ] [/session/new](https://johngravois.com/freehub-css/session/new/index.html) login page
 - [ ] [/forgot/](https://johngravois.com/freehub-css/forgot/index.html) password reset page
+- [ ] [/users/:id/edit/](https://johngravois.com/freehub-css/users/123/index.html) password reset page
 
 ## misc
 
@@ -24,3 +25,4 @@ responsive styles for freehub (for 2019)
 - [ ] do we need jquery?
 - [ ] drop shadow for content without a background image?
 - [ ] make sure site is still navigable by keyboard
+- [ ] "For those who which to not be identified"

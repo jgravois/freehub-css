@@ -17,10 +17,10 @@
   <link href="/stylesheets/calendar_date_select/silver.css?1305303086" media="screen" rel="stylesheet"
     type="text/css" />
 
-  <link href="/stylesheets/application.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../../../stylesheets/v2/application.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/form.css?1464065741" media="screen" rel="stylesheet" type="text/css" />
   <meta name="csrf-param" content="authenticity_token" />
-  <meta name="csrf-token" content="7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g=" />
+  <meta name="csrf-token" content="q5wrkH9snNuOhHBXYvZqvstg3+pAM3YFO9BJqobRqCU=" />
 
 </head>
 
@@ -30,18 +30,18 @@
       <div id='user_status'>
         <span class='greeting'>
           Hello
-          <b><a href="/users/850077844/edit">bikebbq</a></b>
+          <b><a href="/users/123/edit">bikebbq</a></b>
         </span>
         <span class='log_out'>
           <a href="/session"
-            onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g='); f.appendChild(s);f.submit();return false;">Log
+            onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'q5wrkH9snNuOhHBXYvZqvstg3+pAM3YFO9BJqobRqCU='); f.appendChild(s);f.submit();return false;">Log
             Out</a>
         </span>
       </div>
     </div>
     <div id='application_nav'>
       <ul class='tabs'>
-        <li class='selected'><a href='/bikebbq'>Home</a></li>
+        <li class=''><a href='/bikebbq'>Home</a></li>
         <li class=''><a href='/bikebbq/visits/2019/12/7'>Visits</a></li>
         <li class=''><a href='/bikebbq/reports'>Reports</a></li>
         <li class=''><a href='/bikebbq/edit'>Settings</a></li>
@@ -51,58 +51,46 @@
       <h2><a href="/bikebbq">Redlands BikeBBQ</a></h2>
     </div>
     <div class='content' id='application_body'>
-      <div class='section' id='sign_in'>
-        <h2>Sign a Person In</h2>
-        <div class='form'>
-          <label class='desc' style='float:left;'>Name</label>
-          <img alt="Spinner" id="search_status" src="/images/spinner.gif?1305303086" style="display:none;" />
-          <style type="text/css">
-            div.auto_complete {
-              width: 350px;
-              background: #fff;
-            }
+      <h1>Editing user</h1>
 
-            div.auto_complete ul {
-              border: 1px solid #888;
-              margin: 0;
-              padding: 0;
-              width: 100%;
-              list-style-type: none;
-            }
+      <form action="/users/123" class="edit_user" id="edit_user_123" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="_method" type="hidden" value="put" /><input
+            name="authenticity_token" type="hidden" value="q5wrkH9snNuOhHBXYvZqvstg3+pAM3YFO9BJqobRqCU=" /></div>
+        <ul>
+          <li>
+            <label class='desc' for='name'>
+              Full Name
+            </label>
+            <input id="user_name" name="user[name]" size="30" type="text" value="john gravois" />
+          </li>
+          <li>
+            <label class='desc' for='email'>
+              Email
+            </label>
+            <input id="user_email" name="user[email]" size="30" type="text" value="john@bikebbq.com" />
+          </li>
+          <li>
+            <label class='desc' for='login'>
+              Login
+            </label>
+            <input id="user_login" name="user[login]" size="30" type="text" value="bikebbq" />
+          </li>
+          <li>
+            <label class='desc' for='password'>
+              Password
+            </label>
+            <input id="user_password" name="user[password]" size="30" type="password" />
+          </li>
+          <li>
+            <label class='desc' for='password_confirmation'>
+              Confirm Password
+            </label>
+            <input id="user_password_confirmation" name="user[password_confirmation]" size="30" type="password" />
+          </li>
 
-            div.auto_complete ul li {
-              margin: 0;
-              padding: 3px;
-            }
-
-            div.auto_complete ul li.selected {
-              background-color: #ffb;
-            }
-
-            div.auto_complete ul strong.highlight {
-              color: #800;
-              margin: 0;
-              padding: 0;
-            }
-          </style><input id="person_full_name" name="person[full_name]" onfocus="this.select()" size="30" type="text" />
-          <div class="auto_complete" id="person_full_name_auto_complete"></div>
-          <script type="text/javascript">
-            //<![CDATA[
-            var person_full_name_auto_completer = new Ajax.Autocompleter('person_full_name', 'person_full_name_auto_complete', '/bikebbq/people/auto_complete_for_person_full_name', { afterUpdateElement: function (element, value) { window.location = $(value).readAttribute('url'); }, indicator: 'search_status', method: 'get', minChars: 2 })
-//]]>
-          </script>
-        </div>
-        <p>
-          Start typing to find a person or
-          <a href="/bikebbq/people/new">add a new person</a>.
-        </p>
-        <script type='text/javascript'>
-          //<![CDATA[
-          $('person_full_name').focus();
-  //]]>
-        </script>
-      </div>
-
+          <li><input id="user_submit" name="commit" type="submit" value="Update" /></li>
+        </ul>
+      </form>
 
       <div style='clear:both;'></div>
     </div>

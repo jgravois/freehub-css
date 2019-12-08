@@ -2,7 +2,7 @@
 
 <head>
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
-  <title>User Forgot on Freehub</title>
+  <title>Redlands BikeBBQ on Freehub</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
   <script src="/javascripts/prototype.js?1305303086" type="text/javascript"></script>
   <script src="/javascripts/effects.js?1305303086" type="text/javascript"></script>
@@ -14,13 +14,13 @@
   <link href="/stylesheets/reset-min.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
   <script src="/javascripts/calendar_date_select/calendar_date_select.js?1305303086" type="text/javascript"></script>
   <script src="/javascripts/calendar_date_select/format_hyphen_ampm.js?1305303086" type="text/javascript"></script>
-  <link href="../stylesheets/calendar_date_select/silver.css?1305303086" media="screen" rel="stylesheet"
+  <link href="/stylesheets/calendar_date_select/silver.css?1305303086" media="screen" rel="stylesheet"
     type="text/css" />
 
-  <link href="../stylesheets/v2/application.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="../stylesheets/form.css?1464065741" media="screen" rel="stylesheet" type="text/css" />
+  <link href="../../stylesheets/v2/application.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/form.css?1464065741" media="screen" rel="stylesheet" type="text/css" />
   <meta name="csrf-param" content="authenticity_token" />
-  <meta name="csrf-token" content="utz9jiDtK3F9MhinLtz6oEG/HnK6tZ4kEsVRWYoQOkE=" />
+  <meta name="csrf-token" content="7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g=" />
 
 </head>
 
@@ -28,40 +28,62 @@
   <div id='application'>
     <div id='header'>
       <div id='user_status'>
-        <span class='log_in'>
-          <a href="/session/new">Log In</a>
+        <span class='greeting'>
+          Hello
+          <b><a href="/users/123/edit">bikebbq</a></b>
+        </span>
+        <span class='log_out'>
+          <a href="/session"
+            onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '7EZmhlIdF4DVUgujvXWaj1afTkpWlvW2YgcO30Wby9g='); f.appendChild(s);f.submit();return false;">Log
+            Out</a>
         </span>
       </div>
     </div>
     <div id='application_nav'>
       <ul class='tabs'>
-        <li class=''><a href='/'>Home</a></li>
+        <li class=''><a href='/bikebbq'>Home</a></li>
+        <li class=''><a href='/bikebbq/visits/2019/12/7'>Visits</a></li>
+        <li class='selected'><a href='/bikebbq/reports'>Reports</a></li>
+        <li class=''><a href='/bikebbq/edit'>Settings</a></li>
       </ul>
     </div>
     <div id='application_header'>
-      <h2>Welcome to <a href="/">Freehub</a></h2>
+      <h2><a href="/bikebbq">Redlands BikeBBQ</a></h2>
     </div>
     <div class='content' id='application_body'>
-      <h1>User: Send password reset</h1>
+      <h1>Listing reports</h1>
       <div class='column left'>
-        <form action="/forgot" class="new_user" id="new_user" method="post">
-          <div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden"
-              value="utz9jiDtK3F9MhinLtz6oEG/HnK6tZ4kEsVRWYoQOkE=" /></div>
-
-          <ul>
-            <li>
-              <label class='desc' for='user_email'>
-                Email
-              </label>
-              <input id="user_email" name="user[email]" size="30" type="text" />
-              <p class='instruct'>Enter the email address you signed up with. You will get an email with a link to reset
-                your password.</p>
-            </li>
-            <li>
-              <input name="commit" type="submit" value="Submit" />
-            </li>
-          </ul>
-        </form>
+        <div class='section'>
+          <h2>People</h2>
+          <p>
+            The <a href="/bikebbq/reports/people">People Report</a>
+            lists all people, members and non members, and can be exported as CSV for use in a spreadsheet program.
+          </p>
+        </div>
+        <div class='section'>
+          <h2>Services</h2>
+          <p>
+            The <a href="/bikebbq/reports/services">Services Report</a>
+            lists services by type (Membership, Class, Digging Rights) in a date range and can be exported as CSV for
+            use in a spreadsheet program.
+          </p>
+        </div>
+      </div>
+      <div class='column'>
+        <div class='section'>
+          <h2>Visits</h2>
+          <p>
+            The <a href="/bikebbq/reports/visits">Visits Report</a>
+            lists visits in a date range and can be exported as CSV for use in a spreadsheet program.
+          </p>
+        </div>
+        <div class='section'>
+          <h2>Summary</h2>
+          <p>
+            The <a href="/bikebbq/reports/summary">Summary Report</a>
+            provides a high level view of who is visiting the shop when.
+          </p>
+        </div>
       </div>
 
       <div style='clear:both;'></div>
