@@ -29,10 +29,11 @@ responsive styles for freehub (for 2019)
 
 - [ ] clean up the rats nest of new css
 - [ ] yank movie plugin
-- [ ] just use built in browser calendar stuff?
+- [ ] can we use built in browser calendar stuff?
   - [ ] if not we might be able to get rid of the calendar date picker _and_ jquery
 - [ ] do we need ms- prefixed css-grid for IE?
-- [ ] light gray border around main content on wide screens?
-  - [ ] if so we dont need a background image anymore to do a drop shadowshadow for
+- [x] light gray border around main content
+- [x] drop-shadow without a background image
 - [ ] make sure site is still easily navigable by keyboard
-- [ ] "For those who which to not be identified"
+- [x] "For those who which" https://github.com/asalant/freehub/pull/42
+- [ ] put visit arrows on _top_ of the table of visitors (so you dont have to move the mouse)
