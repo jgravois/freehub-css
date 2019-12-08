@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+  <title>Session New on Freehub</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/javascripts/prototype.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/effects.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/dragdrop.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/controls.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/AC_Quicktime.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/application.js?1462168765" type="text/javascript"></script>
+  <script src="/javascripts/tags.jquery.js?1462168765" type="text/javascript"></script>
+  <link href="/stylesheets/reset-min.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/javascripts/calendar_date_select/calendar_date_select.js?1305303086" type="text/javascript"></script>
+  <script src="/javascripts/calendar_date_select/format_hyphen_ampm.js?1305303086" type="text/javascript"></script>
+  <link href="/stylesheets/calendar_date_select/silver.css?1305303086" media="screen" rel="stylesheet"
+    type="text/css" />
+
+  <link href="/stylesheets/application.css?1305303086" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/form.css?1464065741" media="screen" rel="stylesheet" type="text/css" />
+  <meta name="csrf-param" content="authenticity_token" />
+  <meta name="csrf-token" content="utz9jiDtK3F9MhinLtz6oEG/HnK6tZ4kEsVRWYoQOkE=" />
+
+</head>
+
+<body>
+  <div id='application'>
+    <div id='header'>
+      <div id='user_status'>
+        <span class='log_in'>
+          <a href="/session/new">Log In</a>
+        </span>
+      </div>
+    </div>
+    <div id='application_nav'>
+      <ul class='tabs'>
+        <li class=''><a href='/'>Home</a></li>
+      </ul>
+    </div>
+    <div id='application_header'>
+      <h2>Welcome to <a href="/">Freehub</a></h2>
+    </div>
+    <div class='content' id='application_body'>
+      <h1>Log In</h1>
+      <form action="/session" method="post">
+        <div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden"
+            value="utz9jiDtK3F9MhinLtz6oEG/HnK6tZ4kEsVRWYoQOkE=" /></div>
+        <ul>
+          <li>
+            <label class='desc' for='login'>
+              Login
+            </label>
+            <input id="login" name="login" type="text" />
+          </li>
+          <li>
+            <label class='desc' for='password'>
+              Password
+            </label>
+            <input id="password" name="password" type="password" />
+          </li>
+          <li>
+            <input id="remember_me" name="remember_me" type="checkbox" value="1" />
+            <label class='choice' for='remember_me'>Remember me</label>
+          </li>
+          <li>
+            <input name="commit" type="submit" value="Log in" />
+          </li>
+          <li>
+            <a href="/forgot">Forgot username or password?</a>
+          </li>
+        </ul>
+      </form>
+
+      <div style='clear:both;'></div>
+    </div>
+    <div id='application_footer'>
+      Times shown are Pacific Time (US & Canada) timezone.
+    </div>
+  </div>
+  <div id='footer'>
+    <div class='body'>
+      <div id='logo'>
+        <a href="/">Freehub</a>
+      </div>
+      <ul>
+        <li>Get <a href="http://wiki.github.com/asalant/freehub/freehub-support">help or send feedback</a></li>
+        <li>Check the <a href="http://wiki.github.com/asalant/freehub/">project documentation</a></li>
+      </ul>
+      <ul>
+        <li>Thanks to <a href="http://www.engineyard.com">EngineYard</a> for hosting</li>
+      </ul>
+      <div class='credit'>
+        <img alt="Ey-logo" src="/images/ey-logo.gif?1305303086" />
+      </div>
+    </div>
+  </div>
+  <script type='text/javascript'>
+    //<![CDATA[
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16200053-1']);
+    _gaq.push(['_trackPageview']);
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+  </script>
+</body>
+
+</html>

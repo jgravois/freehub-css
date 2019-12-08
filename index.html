@@ -11,23 +11,21 @@
   <link href="./stylesheets/form.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <div id='header'>
+    <div id='user_status'>
+      <span class='log_in'>
+        <a href="/session/new">Log In</a>
+      </span>
+    </div>
+    <span id='notice'>You have been logged out.</span>
+  </div>
+  <div id='application_header'>
+    <h2>Welcome to <a href="/">Freehub</a></h2>
+  </div>
+  <div id='application_nav'>
+    <a class='selected' href='/'>Home</a>
+  </div>
   <div id='application'>
-    <!--div id='header'>
-      <div id='user_status'>
-        <span class='log_in'>
-          <a href="/session/new">Log In</a>
-        </span>
-      </div>
-      <span id='notice'>You have been logged out.</span>
-    </div>
-    <div id='application_nav'>
-      <ul class='tabs'>
-        <li class='selected'><a href='/'>Home</a></li>
-      </ul>
-    </div>
-    <div id='application_header'>
-      <h2>Welcome to <a href="/">Freehub</a></h2>
-    </div-->
     <!--div class='application_body'-->
       <div id='column-left'>
         <div class='section'>
@@ -235,9 +233,9 @@
         </div>
       </div>
     </div>
-    <!--div class='application_footer'>
-      Times shown are Pacific Time (US & Canada) timezone.
-    </div-->
+  </div>
+  <div id='application_footer'>
+    Times shown are Pacific Time (US & Canada) timezone.
   </div>
   <div id='footer'>
     <div class='body'>
