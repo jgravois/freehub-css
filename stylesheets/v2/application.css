@@ -18,14 +18,16 @@ body, legend, select, input, textarea, th, td {
 }
 
 #application {
-  margin: 0 12px;
   background: white;
   box-shadow: 0 2px 0px 0px rgba(0, 0, 0, .1);
   position: relative;
   z-index: 2;
+  max-width: 955px;
+  margin: 0 auto;
 }
 
 #application_body {
+  padding: 26px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
@@ -43,12 +45,12 @@ body, legend, select, input, textarea, th, td {
 
 .column-left {
   grid-area: column-left;
-  padding: 0 26px 0 26px;
+  width: 100%
 }
 
 .column-right {
   grid-area: column-right;
-  padding: 0 26px 0 26px;
+  width: 100%
 }
 
 #application_footer {

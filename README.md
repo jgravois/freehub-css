@@ -37,4 +37,5 @@ responsive styles for freehub (for 2019)
 - [x] drop-shadow without a background image
 - [ ] make sure site is still easily navigable by keyboard
 - [x] "For those who which" https://github.com/asalant/freehub/pull/42
+- [ ] "These organization have signed up to use Freehub and are actively using it."
 - [ ] put visit arrows on _top_ of the table of visitors (so you dont have to move the mouse)
