@@ -23,9 +23,10 @@ responsive styles for freehub (for 2019)
 ## tweaks required in the app
 1. `.column left` > `.column-left`
 1. `.column` > `.column-right`
-1. `null` > `.column` (for pages that only had one column before)
+1. `null` > `.column` (for pages with a single column)
+1. some html :cheese: needed to be moved in the header and footer
 
-## misc
+### misc
 
 - [ ] clean up the rats nest of new css
 - [ ] yank movie plugin

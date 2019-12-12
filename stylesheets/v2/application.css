@@ -216,7 +216,7 @@ ul.content li {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
-  align-items: baseline;
+  align-items: flex-end;
   padding: 10px 14px 10px 0;
 }
 
