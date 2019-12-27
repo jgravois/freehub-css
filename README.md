@@ -29,7 +29,7 @@ responsive styles for freehub (for 2019)
 ### misc
 
 - [ ] clean up the rats nest of new css
-- [ ] yank movie plugin
+- [x] yank movie plugin https://github.com/asalant/freehub/pull/47
 - [ ] can we use built in browser calendar stuff?
   - [ ] if not we might be able to get rid of the calendar date picker _and_ jquery
 - [ ] do we need ms- prefixed css-grid for IE?
@@ -39,3 +39,4 @@ responsive styles for freehub (for 2019)
 - [x] "For those who which" https://github.com/asalant/freehub/pull/42
 - [ ] "These organization have signed up to use Freehub and are actively using it."
 - [ ] put visit arrows on _top_ of the table of visitors (so you dont have to move the mouse)
+- [ ] yank jquery?
