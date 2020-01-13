@@ -25,18 +25,3 @@ responsive styles for freehub (for 2019)
 1. `.column` > `.column-right`
 1. `null` > `.column` (for pages with a single column)
 1. some html :cheese: needed to be moved in the header and footer
-
-### misc
-
-- [ ] clean up the rats nest of new css
-- [x] yank movie plugin https://github.com/asalant/freehub/pull/47
-- [ ] can we use built in browser calendar stuff?
-  - [ ] if not we might be able to get rid of the calendar date picker _and_ jquery
-- [ ] do we need ms- prefixed css-grid for IE?
-- [x] light gray border around main content
-- [x] drop-shadow without a background image
-- [ ] make sure site is still easily navigable by keyboard
-- [x] "For those who which" https://github.com/asalant/freehub/pull/42
-- [ ] "These organization have signed up to use Freehub and are actively using it."
-- [ ] put visit arrows on _top_ of the table of visitors (so you dont have to move the mouse)
-- [ ] yank jquery?
